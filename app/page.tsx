@@ -7,7 +7,6 @@ import { Button } from "@/components/ui/button"
 import { ThemeToggle } from "@/components/theme-toggle"
 import Link from "next/link"
 import { LockKeyhole } from "lucide-react"
-import { CardFooter } from "@/components/ui/card"
 
 export default function Home() {
   return (
@@ -47,14 +46,19 @@ export default function Home() {
           </div>
         </div>
       </div>
+
       <footer className="mt-12 text-right text-sm text-gray-500">
-        <CardFooter className="justify-right">
-        {" | "}
-          Desarrollado por {" "}
-          <Link href="https://github.com/Nehusn" target="_blank">
+        <div>
+          Desarrollado por{" "}
+          <Link
+            href="https://github.com/Nehusn"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline hover:text-gray-700"
+          >
             Red Crossbones
           </Link>
-        </CardFooter>
+        </div>
       </footer>
     </main>
   )
