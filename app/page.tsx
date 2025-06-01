@@ -47,13 +47,13 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <footer className="mt-12 text-center text-sm text-gray-500">
-        <CardFooter className="justify-center">
-          Desarrollado por{" "}
+      <footer className="mt-12 text-right text-sm text-gray-500">
+        <CardFooter className="justify-right">
+        {" | "}
+          Desarrollado por {" "}
           <Link href="https://github.com/Nehusn" target="_blank">
             Red Crossbones
           </Link>
-          {" | "}
         </CardFooter>
       </footer>
     </main>
